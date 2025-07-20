@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './Day.module.css';
 import { useParams } from 'react-router-dom';
 import AddWordModal from '../comonents/AddWordModal';
@@ -6,7 +6,7 @@ import WordTable from '../comonents/WordTable';
 
 function Day() {
     const { id: dayId } = useParams();
-
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const [words, setWords] = useState(() => {
         const savedWords = localStorage.getItem(`words_day_${dayId}`);
         return savedWords ? JSON.parse(savedWords) : [];
@@ -15,8 +15,6 @@ function Day() {
     useEffect(() => {
         localStorage.setItem(`words_day_${dayId}`, JSON.stringify(words));
     }, [words, dayId]);
-
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleNewWordAdd = (newWord) => {
         const newId =
@@ -45,14 +43,14 @@ function Day() {
     };
 
     return (
-        <div>
+        <div className={styles.layout}>
             <div className={styles.btn_manage}>
                 <button onClick={() => setIsModalOpen(true)}>+</button>
             </div>
             <h2>Day {dayId}</h2>
             <div className={styles.table_content}>
                 {words.length > 0 ? (
-                    <table className={styles.table}>
+                    <table>
                         <thead>
                             <tr>
                                 <th>암기 체크</th>
