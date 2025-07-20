@@ -1,0 +1,17 @@
+/* WordTable.module.css */
+
+.word.checked {
+    color: #333; /* 체크됐을 때 글자색 */
+    opacity: 0.7; /* 체크됐을 때 행 전체의 투명도 */
+    background-color: #0000008d;
+}
+
+.btn_hide {
+    font-size: 15px;
+    padding: 7px 10px;
+    background-color: rgb(29, 113, 223);
+}
+
+.hide {
+    color: #242424;
+}

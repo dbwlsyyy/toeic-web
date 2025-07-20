@@ -1,0 +1,10 @@
+.btn_day {
+    background-color: rgb(0, 89, 255);
+    border: 1px solid rgb(131, 199, 255);
+    margin: 5px;
+}
+
+.btn_day:hover {
+    background-color: navy;
+    border-color: aliceblue;
+}

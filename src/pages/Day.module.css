@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #555;
+    border-bottom: 3px double #ddd;
+}
+
+.btn_manage {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    gap: 5px;
+}
+
+.table_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

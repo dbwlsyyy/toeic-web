@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    text-align: center;
+}
+
+#header {
+    display: flex;
+    background-color: #000000;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 110px;
+    align-items: center;
+}
+
+#btn-nav {
+    margin-left: 10px;
+}
