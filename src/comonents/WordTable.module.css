@@ -1,15 +1,20 @@
-/* WordTable.module.css */
-
 .word.checked {
-    color: #333; /* 체크됐을 때 글자색 */
-    opacity: 0.7; /* 체크됐을 때 행 전체의 투명도 */
+    color: #333;
+    opacity: 0.7;
     background-color: #0000008d;
 }
 
-.btn_hide {
+.btn_controls {
     font-size: 15px;
     padding: 7px 10px;
+}
+.btn_hide {
     background-color: rgb(29, 113, 223);
+    margin-right: 5px;
+}
+
+.btn_delete {
+    background-color: rgba(252, 52, 52, 0.738);
 }
 
 .hide {

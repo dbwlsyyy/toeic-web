@@ -40,13 +40,14 @@ function Day() {
         );
     };
 
-    const handleDelDay = () => {};
+    const handleOnDelete = (wordId) => {
+        setWords((prev) => prev.filter((word) => word.id !== wordId));
+    };
 
     return (
         <div>
             <div className={styles.btn_manage}>
                 <button onClick={() => setIsModalOpen(true)}>+</button>
-                <button onClick={handleDelDay}>삭제</button>
             </div>
             <h2>Day {dayId}</h2>
             <div className={styles.table_content}>
@@ -66,6 +67,7 @@ function Day() {
                                     key={word.id}
                                     word={word}
                                     onCheck={handleOnCheck}
+                                    onDelete={handleOnDelete}
                                 />
                             ))}
                         </tbody>
