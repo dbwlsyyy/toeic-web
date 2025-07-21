@@ -24,3 +24,26 @@
 .disabled {
     cursor: default;
 }
+
+td {
+    min-width: 100px;
+    max-width: 200px;
+}
+table {
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #555;
+    border-bottom: 3px double #ddd;
+}
