@@ -5,7 +5,7 @@ import AddWordModal from '../comonents/AddWordModal';
 import WordTable from '../comonents/WordTable';
 
 function Day() {
-    const { id: dayId } = useParams();
+    const { dayId } = useParams();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [words, setWords] = useState(() => {
         const savedWords = localStorage.getItem(`words_day_${dayId}`);
