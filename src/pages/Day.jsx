@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Day.module.css';
 import { useParams } from 'react-router-dom';
 import AddWordModal from '../comonents/AddWordModal';
@@ -56,7 +56,7 @@ function Day() {
                                 <th>암기 체크</th>
                                 <th>단어</th>
                                 <th>뜻</th>
-                                <th>가림막</th>
+                                <th>컨트롤</th>
                             </tr>
                         </thead>
                         <tbody>

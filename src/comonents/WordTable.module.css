@@ -20,3 +20,7 @@
 .hide {
     color: #242424;
 }
+
+.disabled {
+    cursor: default;
+}

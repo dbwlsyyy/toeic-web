@@ -30,10 +30,6 @@
     animation: slideIn 0.3s ease-out forwards; /* 등장 애니메이션 */
 }
 
-.modal_content.slideOut {
-    animation: slideOut 0.3s ease-out forwards;
-}
-
 .modal_content > form > label {
     display: block;
     margin: 20px;
@@ -50,7 +46,6 @@
     padding: 3px;
 }
 
-/* 모달 닫기 버튼 */
 .btn_close {
     position: absolute;
     top: 15px;
@@ -76,16 +71,5 @@
     to {
         transform: translateY(0);
         opacity: 1;
-    }
-}
-
-@keyframes slideOut {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(-50px);
-        opacity: 0;
     }
 }
