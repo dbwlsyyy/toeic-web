@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './WordTable.module.css';
 
 export default function WordTable({ word, onCheck, onDelete }) {
-    const [ishide, setIsHide] = useState(false);
+    const [isHide, setIsHide] = useState(false);
 
     return (
         <tr
@@ -18,7 +18,7 @@ export default function WordTable({ word, onCheck, onDelete }) {
                 ></input>
             </td>
             <td>{word.eng}</td>
-            <td>{ishide ? '' : word.kor}</td>
+            <td>{isHide ? '' : word.kor}</td>
             <td>
                 <button
                     className={`${styles.btn_controls} ${styles.btn_hide} ${
@@ -27,7 +27,7 @@ export default function WordTable({ word, onCheck, onDelete }) {
                     onClick={() => setIsHide((prev) => !prev)}
                     disabled={word.isChecked}
                 >
-                    뜻 숨기기
+                    {isHide ? '뜻 보기' : '뜻 숨김'}
                 </button>
                 <button
                     className={`${styles.btn_controls} ${styles.btn_delete}`}
